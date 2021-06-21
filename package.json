@@ -1,16 +1,32 @@
 {
-  "name": "with-mongodb",
+  "name": "app-to-go",
   "version": "0.1.0",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "mongodb": "^3.5.9",
+    "@reduxjs/toolkit": "^1.5.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.0-beta3",
+    "js-cookie": "^2.2.1",
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-axios": "^2.0.5",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "^16.13.1",
+    "react-jwt": "^1.1.2",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "sass": "^1.32.12",
+    "swr": "^0.5.5"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "description": "[MongoDB](https://www.mongodb.com/) is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. This example will show you how to connect to and use MongoDB as your backend for your Next.js app.",
+  "author": "Stan",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
 }

@@ -1,0 +1,43 @@
+.text {
+  &-light {
+    color: $gray_light5 !important;
+  }
+
+  &-secondary {
+    color: $gray_dark2 !important;
+  }
+
+  &-main, &-primary {
+    color: $gray_dark6 !important;
+  }
+
+  &-main-2, &-dark {
+    color: $gray_dark4 !important;
+  }
+
+  &-blue {
+    color: $blue_light2 !important;
+  }
+
+  &-link-blue {
+    color: $blue_light2 !important;
+    &:active, &:hover {
+      color: $blue_dark !important;
+    }
+  }
+
+  &-red {
+    color: $red_light2 !important;
+  }
+
+  &-link-red {
+    color: $red_light2 !important;
+    &:active, &:hover {
+      color: $red_dark !important;
+    }
+  }
+}
+
+.text-pre-line {
+  white-space: pre-line !important;
+}

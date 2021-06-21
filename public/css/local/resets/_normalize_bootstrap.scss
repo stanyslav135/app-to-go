@@ -1,0 +1,15 @@
+.container {
+  max-width: $container_max_width;
+  position: relative;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  border-top-color: #c7c7cc;
+}

@@ -1,0 +1,26 @@
+.b {
+  &-none, &-0 {
+    border: none;
+  }
+
+  &r-1 {
+    border-right: 1px solid $gray_light3;
+  }
+
+  &l-1 {
+    border-left: 1px solid $gray_light3;
+  }
+
+  &t-1 {
+    border-top: 1px solid $gray_light3;
+  }
+
+  &b-1 {
+    border-bottom: 1px solid $gray_light3;
+  }
+
+  &-1 {
+    border: 1px solid $gray_light3;
+  }
+
+}
