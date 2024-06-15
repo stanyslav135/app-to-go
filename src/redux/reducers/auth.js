@@ -1,8 +1,6 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import axios from "axios";
+import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
 import Cookies from "js-cookie";
 import Router from "next/router";
-import {decodeToken, isExpired} from "react-jwt";
 
 export const authorize = createAsyncThunk(
     'auth/authorize',
@@ -274,9 +272,6 @@ export const authSlice = createSlice({
 
 export const { logOut, authToInitial } = authSlice.actions;
 
-// The function below is called a selector and allows us to select a value from
-// the state. Selectors can also be defined inline where they're used instead of
-// in the slice file. For example: `useSelector((state) => state.counter.value)`
 export const getAuth = state => state.auth;
 export const getAuthErrors = state => state.auth.errors;
 export const getAuthMessages = state => state.auth.messages;

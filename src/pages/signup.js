@@ -1,14 +1,13 @@
-import { withUser } from '../lib/hocs/withUser';
+import {withUser} from '../lib/hocs/withUser';
 import {useEffect, useState} from "react";
 import Router, {useRouter} from "next/router";
 import {DashboardLayout} from "../layouts/DashboardLayout";
 import {Col, Container, Row} from "react-bootstrap";
 import {useSelector} from "react-redux";
 import {
-    getAuth,
-    getAuthErrors, getAuthMessages,
+    getAuthErrors,
+    getAuthMessages,
     getAuthStatus,
-    logIn,
     sendVerificationCode,
     signUp,
     verifyPhone

@@ -1,18 +1,14 @@
-import { withUser } from '../lib/hocs/withUser';
-import { useAuth } from '../lib/hooks/useAuth';
-import {useContext, useEffect, useState} from "react";
-import {UserContext} from "./_app";
+import {withUser} from '../lib/hocs/withUser';
+import {useEffect, useState} from "react";
 import Router, {useRouter} from "next/router";
-import {EmptyLayout} from "../layouts/EmptyLayout";
 import {Col, Container, Row} from "react-bootstrap";
 import {DashboardLayout} from "../layouts/DashboardLayout";
 import store from "../redux/store";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import {getAuthErrors, getAuthStatus, logIn} from "../redux/reducers/auth";
 import FormGroup from "../components/form-group/form-group";
 import Button from "../components/button/button";
 import Link from 'next/link';
-import {getUserPermissionLevel} from "../redux/reducers/user";
 
 
 const Login = (props) => {

@@ -1,10 +1,8 @@
-import { withUser } from '../lib/hocs/withUser';
-import { useAuth } from '../lib/hooks/useAuth';
+import {withUser} from '../lib/hocs/withUser';
 import {useSelector} from "react-redux";
 import {getUserData} from "../redux/reducers/user";
 import store from "../redux/store";
-import {useJwt, decodeToken, isExpired} from "react-jwt";
-import {logIn, logOut} from "../redux/reducers/auth";
+import {logOut} from "../redux/reducers/auth";
 import Router from "next/router";
 
 const Profile = (props) => {

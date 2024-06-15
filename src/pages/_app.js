@@ -1,10 +1,6 @@
-import Router from 'next/router';
-import { useState, useEffect, createContext } from 'react';
+import {createContext, useEffect, useState} from 'react';
 import Cookies from 'js-cookie';
-import { isExpired, decodeToken } from "react-jwt";
-import useSWR, { trigger, mutate } from 'swr'
 import {Provider} from "react-redux";
-import axios from "axios";
 
 import '../../public/css/index.scss';
 import store from "../redux/store";

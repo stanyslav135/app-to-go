@@ -1,35 +1,8 @@
 import styles from './form-group.module.scss';
 
-/*const initialProps = {
-    className: String,
-    required: Boolean,
-    input: {
-        type: String,
-        placeholder: String,
-        value: String,
-        onChange: () => {}
-    },
-    button: {
-        text: String,
-        className: String
-        onClick: () => {}
-    }
-    label: {
-        text: String || false,
-        className: String
-    },
-    hint: String || false,
-    help: String || false
-}*/
-
-
 export default function FormGroup(props) {
 
     const { className, input, button, label, hint, error, success } = props;
-
-    // if(button) {
-    //     const renderButton = <button onClick={button.onClick} className={`${styles.formButton} ${button.className}`}>{button.text}</button>;
-    // }
 
     return (
       <div className={`${styles.formGroup} ${className && className}`}>
